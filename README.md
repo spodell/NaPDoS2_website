@@ -46,7 +46,7 @@ What it does
 
   Script-calling order
   
-  [napdos2_script_order.pdf](https://github.com/spodell/NaPDoS2_website/files/7490932/napdos2_script_order.pdf)
+  ![napdos2_script_order](https://user-images.githubusercontent.com/24737584/140618423-aec059a9-0b21-4d97-b2e1-e724decc9199.png)
 
   
   Reference Citations
