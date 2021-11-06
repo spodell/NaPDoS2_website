@@ -1,0 +1,275 @@
+html {
+        overflow: scroll;
+}
+
+body {
+    font-family: sans-serif,aria;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+    background: #F5F5F5 url("../image/paper_1.jpg") repeat fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+#title {
+    font-weight: bold;
+    font-size: 3em;
+    color: white;
+    text-shadow: 3px 3px 4px #999;
+}
+
+#subtitle {
+    color:white;
+    font-size: 1.1em;
+    font-weight:bold;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    margin:0;
+    padding:0;
+}
+
+#topmenu {
+    background: url("../image/topmenubg.png") bottom left repeat-x;
+    padding-top: 12px;
+}
+
+#topmenu ul {
+    margin:0 auto;
+    padding:0;
+    display:table;
+    /*border: red solid 1px*/
+}
+
+#topmenu li {
+    display: table-cell;
+    list-style-type: none;
+    float: left;
+    background-color: #444;
+    background: #444 url("../image/grey_gradient.png") top left repeat-x;
+    border-top: 1px solid #444;
+    border-left: 1px solid #444;
+    border-right: 1px solid #444;
+    margin-left:3px;
+    margin-right:3px;
+}
+
+#topmenu a {display:block; font-size:1.0em; font-weight:bold;text-shadow:0.1em 0.1em 0.2em black; padding:4px 25px 5px 25px;}
+#topmenu a:link {color:white; text-decoration:none}
+#topmenu a:visited {color:white; text-decoration:none}
+#topmenu a:hover {color:white; text-decoration:none}
+
+.current {
+    background: #EFEFEF!important;
+}
+.current a{text-shadow: 0.1em 0.1em 0.2em white!important;}
+.current a:link {color:black!important;}
+.current a:visited {color:black!important}
+.current a:hover {color:black}
+
+#output {
+    display: none;
+    padding: 8px;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+#main {
+    /*background-color: #FFF;*/
+    background-color: #EFEFEF;
+   /* width: 980px;*/
+    width: 800px;
+    margin-top: 0;
+    min-height: 400px;
+    padding-top:20px;
+    padding-bottom:30px;
+    border-left:1px solid #CCC;
+    border-right:1px solid #CCC;
+    border-bottom:1px solid #CCC;
+}
+
+#maininner {
+    position:relative;
+    margin: 0 40px 0 40px;
+}
+
+input,textarea {
+    border: 1px solid #888;
+    background: #FFF;
+    margin: 0;
+}
+
+button {
+    margin-top:5px;
+    background-color: #ABD;
+    font-weight: bold;
+    vertical-align:baseline;
+}
+
+#footer a:link {color: #028;} 
+#footer a:visited {color: #028;} 
+#footer a:hover {background-color: #CCC; text-decoration: none;}
+
+#header {
+    padding-top: 5px;
+    padding-bottom: 0px;
+    text-align: center;
+   	background: url("../image/1_pixel_gradient.png") top left repeat; 
+}
+
+#footer {
+    color: #333333; 
+    font-size:90%;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#ref {
+    border: solid 1px #EEE;
+    background: #EFEFEF;
+    padding: 7px;
+    margin-top: 15px;
+    font-size: 90%;
+    color: #222;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    border: none;
+    margin: 0;
+}
+
+img.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.bordered {
+    display: block;
+      border:1px solid #AAA;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.shadow {
+    -moz-box-shadow: 3px 3px 9px 2px #777;
+    -webkit-box-shadow: 3px 3px 9px 2px #777;
+    box-shadow: 3px 3px 9px 2px #777;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#777777')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#777777');
+}
+
+.shadowmain {
+    -moz-box-shadow: 0px 2px 5px 2px #BBB;
+    -webkit-box-shadow: 0px 2px 5px 2px #BBB;
+    box-shadow: 0px 2px 5px 2px #BBB;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#777777')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#777777');
+}
+
+pre {
+    white-space: pre-wrap;
+    font-family:monospace;
+    font-size: 1.0em;    
+}
+
+h2 {
+    border-bottom: 2px solid #ABC;
+}
+
+table.sortable2 {
+	display:block;
+	position:relative; 
+	/*width: 720px;*/
+	max-height: 500px; 
+	margin:0;
+	padding:0px;
+	background:inherit;
+	color:inherit;
+	border: solid thin #000000;
+	overflow:auto;/*must have this*/
+}
+
+/*table.sortable2 th, table2.sortable td {*/
+table2.sortable td {
+	text-align: left;
+	padding: 2px 4px 2px 4px;
+	/*width: 100px;*/
+	border-style: solid;
+	border-color: #444;
+}
+table.sortable2 th {
+	border-width: 0px 1px 1px 1px;
+	background-color: #ccc;	
+	position: -webkit-sticky; /* Safari */
+  	position: sticky;
+	top: 0;
+}
+/*added for Napdos2 bgc index cards*/
+
+table3 {
+	display:block; /*this adds extra border if table is too small, but allows scroll bars to work*/
+	position:relative; 
+	/*width: 720px;*/
+	width:95%;
+	max-height: 100px;
+	margin:0;
+	padding:0px;
+	background:inherit;
+	color:inherit;
+	border: solid thin #000000;
+	overflow:auto;/*must have this*/
+}
+
+.table3 td {
+	text-align: left;
+	padding: 2px 4px 2px 4px;
+	/*width: 100px;*/
+	border-style: solid;
+	border-color: #444;
+	border-width: 0px 1px 1px 1px;
+	
+} 
+
+.table3 th {
+	background-color: #ccc;
+	text-align: left;
+	padding: 2px 4px 2px 4px;
+	/*width: 100px;*/
+	border-style: solid;
+	border-color: #444;
+	border-width: 1px 1px 1px 1px;
+	position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
