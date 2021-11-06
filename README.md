@@ -15,7 +15,7 @@ This repository contains the code used to construct version 2 of the Natural Pro
 	- Sequence selection by ID number
 	
   	
-What NaPDoS2 does
+What the NaPDoS2 website does
 
 	- NaPDoS2 detects and classifies ketosynthase (KS) and condensation (C) domains
 	from genomic, metagenomic, and PCR amplicon sequence data.
