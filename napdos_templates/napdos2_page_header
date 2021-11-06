@@ -1,0 +1,17 @@
+<div id="header" class="centered">
+<a href="$webpath/napdos_home.html"><img src="$webpath/image/NaPDoS_blue_2.png" alt = "NaPDoS logo" /></a>
+<div id="subtitle">Natural Product Domain Seeker</div>
+<div id="topmenu" class="centered">
+<ul>
+<li><a href="$webpath/napdos2/napdos_home_v2.html">Home</a></li>
+<li><a href="$webpath/napdos2/quickstart.html">QuickStart</a></li>
+<li><a href="$webpath/napdos2/run_analysis_v2.html">Run Analysis</a></li>
+<li><a href="$webpath/napdos2/classification.html">Classification</a></li></li>
+<li><a href="$webpath/napdos2/pathways_v2.html">BGCs</a></li>
+<li><a href="$webpath/napdos2/contact_v2.html">Contact Us</a></li>
+</ul>
+<div class="clear"></div>
+</div> <!--End Topmenu-->
+</div><!--End Header-->
+<div id="main" class="centered shadowmain">
+<div id="maininner">
