@@ -12,8 +12,6 @@ This repository contains the code used to construct version 2 of the Natural Pro
 	
 	- Randomization
 	
-	- Sequence selection by ID number
-	
   	
 What the NaPDoS2 website does:
 
