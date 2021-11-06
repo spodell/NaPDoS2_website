@@ -25,14 +25,23 @@ What it does
 	might be produced.
   
   Basic back-end pipeline steps:
+  
 	1. Translate nucleic acids to proteins (if necessary)
+	
 	2. Diamond BLASTP search against a curated reference database to retrieve protein domains
+	
 	3. Retrieve reference database information on blast matches from MySQL database
+	
 	4. Tally category summary for matches in submitted data set
+	
 	5. Retrieve trimmed protein sequences for selected domains via BLASTP search coordinates.
+	
 	6. Retrieve trimmed nucleic acid sequences via BLASTX search coordinates.
+	
 	7. Retrieve amino acid sequences for database neighbors identified by original BLASTP search.
+	
 	8. Align selected user domain protein sequences with database neighbors
+	
 	9. Build tree from protein alignment
   
   Reference Citations 
