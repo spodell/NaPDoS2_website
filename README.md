@@ -15,7 +15,7 @@ This repository contains the code used to construct version 2 of the Natural Pro
 	- Sequence selection by ID number
 	
   	
-What the NaPDoS2 website does
+What the NaPDoS2 website does:
 
 	- NaPDoS2 detects and classifies ketosynthase (KS) and condensation (C) domains
 	from genomic, metagenomic, and PCR amplicon sequence data.
@@ -53,11 +53,11 @@ What the NaPDoS2 website does
 	
 	9. Build tree from protein alignment
 
-  Script-calling order
+  Script-calling order:
   
   ![napdos2_script_order_small](https://user-images.githubusercontent.com/24737584/140618778-811dc638-b629-42ab-a7db-aea2515e7cfc.png)
  
-  Reference Citations
+  Reference Citations:
   
 	Klau LJ, Podell S, Creamer KE, Demko AM, Singh HW, Allen E, Moore BM, Ziemert N,
 	Letzel AC, Jensen PR. The Natural Product Domain Seeker (NaPDoS) version 2:
