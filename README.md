@@ -44,14 +44,14 @@ What it does
 	
 	9. Build tree from protein alignment
   
-  Reference Citations 
+  Reference Citations
   
-		Klau LJ, Podell S, Creamer KE, Demko AM, Singh HW, Allen E, Moore BM, Ziemert N,
-		Letzel AC, Jensen PR. The Natural Product Domain Seeker (NaPDoS) version 2:
-		Relating ketosynthase phylogeny to biosynthetic function. (in preparation)
+	Klau LJ, Podell S, Creamer KE, Demko AM, Singh HW, Allen E, Moore BM, Ziemert N,
+	Letzel AC, Jensen PR. The Natural Product Domain Seeker (NaPDoS) version 2:
+	Relating ketosynthase phylogeny to biosynthetic function. (in preparation)
 
-		Ziemert N, Podell S, Penn K, Badger JH, Allen E, Jensen PR The Natural Product
-		Domain Seeker NaPDoS: A Phylogeny Based Bioinformatic Tool to Classify Secondary
-		Metabolite Gene Diversity. PLoS One. 2012;7(3):e34064 Epub 2012 Mar 29. PubMed
-		PMID: 22479523
+	Ziemert N, Podell S, Penn K, Badger JH, Allen E, Jensen PR The Natural Product
+	Domain Seeker NaPDoS: A Phylogeny Based Bioinformatic Tool to Classify Secondary
+	Metabolite Gene Diversity. PLoS One. 2012;7(3):e34064 Epub 2012 Mar 29. PubMed
+	PMID: 22479523
     
