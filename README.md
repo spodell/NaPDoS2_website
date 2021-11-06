@@ -6,7 +6,7 @@ This repository contains the code used to construct version 2 of the Natural Pro
   It also contains file size management scripts that users can run to select subsets 
   of their data to reduce computational time and resources.
 
-What it does
+What NaPDoS2 does
 
 	- NaPDoS2 detects and classifies ketosynthase (KS) and condensation (C) domains
 	from genomic, metagenomic, and PCR amplicon sequence data.
