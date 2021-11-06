@@ -10,7 +10,7 @@ This repository contains the code used to construct version 2 of the Natural Pro
 	
 	- File Splitting
 	
-	- Sequence randomization
+	- Randomization
 	
   	
 What the NaPDoS2 website does:
