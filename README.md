@@ -1,6 +1,6 @@
 # NaPDoS2_website
-	This repository contains the code used to construct version 2 of the Natural Product 
-	Domain Seeker (NaPDoS2) website:
+	This repository contains the code used to construct version 2 
+	of the Natural Product Domain Seeker (NaPDoS2) website:
 
 	https://npdomainseeker.sdsc.edu/napdos2/
   
