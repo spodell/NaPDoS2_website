@@ -1,0 +1,125 @@
+<!DOCtype html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="bioinformatics,genomics" />
+<meta http-equiv="X-Frame-Options" content="deny" />
+<title>NaPDoS | File Size Management Options </title>
+<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
+</head>
+<body>
+<div id="header" class="centered">
+<a href="napdos_home_v2.html"> <img src="image/NaPDoS_blue_2.png" alt = "NaPDoS logo" /></a>
+<div id="subtitle">Natural Product Domain Seeker</div>
+<div id="topmenu" class="centered">
+<ul>
+<li><a href="napdos_home_v2.html">Home</a></li>
+<li> <a href="quickstart.html">QuickStart</a></li>
+<li><a href="run_analysis_v2.html">Run Analysis</a></li>
+<li><a href="classification.html">Classification</a></li>
+<li><a href="pathways_v2.html">BGCs</a></li>
+<li><a href="contact_v2.html">Contact Us</a></li>
+</ul>
+<div class="clear"></div>
+</div> <!--End Topmenu-->
+</div><!--End Header-->
+<div id="main" class="centered shadowmain">
+<div id="maininner">
+<h1>File Size Management Tools</h1>
+
+<p>If your query files are too large for NaPDoS website submission, several options are 
+available for pre-filtering and/or subdividing the data into smaller batches
+on your own computer.</p>
+
+<ol>
+	<li><b>Assembly</b>
+	<p>Short sequencing reads such as those obtained using Illumina
+	technology (typically 150 nucleotides or shorter) cannot be used 
+	for NaPDoS classification unless they are
+	first assembled into longer contigs, with a program such as 
+	<a href="http://cab.spbu.ru/software/spades/">Spades</a> or 
+	<a href="https://github.com/loneknightpy/idba"</a>IDBA-UD</a>.
+	This is because short query sequences do not provide enough information 
+	to determine whether or not they match
+	 PKS and NRPS reference domains, which are typically about 
+	1250 nucleotides (425 amino acids) long. Query sequences should ideally cover
+	at least half of that that length.  
+	</p>
+	</li>
+	
+	<li><b>Size filtering</b>
+		<p> Assembled contigs often include sequences that are too short to 
+		allow detection of PKS and NRPS domains. The 
+		<a href ="../scripts/size_limit_seqs.pl.gz" >size_limit_seqs.pl</a> perl script can be 
+		downloaded (by clicking the link) and used on the unix command
+		line on your local computer to pre-filter a fasta file of contig sequences according to size,
+		using the unix command line. Example commands:
+		</p>
+		<pre>
+    gunzip size_limit_seqs.pl.gz
+    chmod 755 size_limit_seqs.pl
+    ./size_limit_seqs.pl fasta_filename &nbsp; num_seqs_per_subfile&nbsp; minimum_seq_length > out_filename
+		</pre>	
+	</li>
+
+	<li><b>File splitting</b>
+		<p> Files can be split up into multiple parts by downloading the
+		<a href ="../scripts/serialize_seqs.pl.gz" >serialize_seqs.pl</a> perl 
+		script (by clicking the link) and runnig it from the unix command line
+		on your local computer. Example commands:
+		</p>
+		<pre>
+    gunzip serialize_seqs.pl.gz
+    chmod 755 serialize_seqs.pl
+    ./serialize_seqs.pl&nbsp; fasta_filename &nbsp;num_seqs_per_subfile
+		</pre> 		
+	</li>
+	
+	<li><b>De-replication</b>
+		<p> Identical or nearly-identical sequences can be consolidated 
+		using the <a href="https://github.com/weizhongli/cdhit/wiki">CD-hit program.</a>
+		This approach can be particularly helpful for PCR or transcriptome data sets
+		with high levels of sequence replication.
+		</p>
+	</li>
+
+	<li><b>Amino acid translation</b>
+	<p> Nucleic acid sequence files can be pre-translated into amino acid sequence files, which will be 
+	often be smaller in total size, using programs such as <a href="https://github.com/tseemann/prokka/">Prokka</a>.
+	
+		</p>
+	</li>
+
+	<li><b>Preliminary BLASTX filtering</b>
+		<p> Assembled contigs can be pre-selected based on a unix command-line 
+		<a href="https://github.com/bbuchfink/diamond/">Diamond</a> BLASTX 
+		search against the downloadable domain reference sequences at the bottom of 
+		the <a href="http://npdomainseeker.sdsc.edu/napdos2/pathways_v2.html">
+		NaPDoS Pathways page</a>. Candidate sequences identified by the pre-filtering
+		blast step can be selected on the unix command line with the perl script 
+		<a href ="../scripts/getseq_multiple.pl.gz" >getseq_multiple.pl</a> 
+		(download by clicking on link). Example commands:
+		</p>	
+<pre>   diamond makedb --in all_KS_191020_1877.faa -d all_KS_191020_1877.dmnd -t temp_directory 
+   diamond blastx -d all_KS_191020_1877.dmnd -q orig_query_filename -e 1e-5 -p num_processors --max-target-seqs 1 -t temp_directory -o results_filename
+   
+   cut -f1 results_filename > candidate_query_ids
+   gunzip getseq_multiple.pl.gz
+   chmod 755 getseq_multiple.pl
+   ./getseq_multiple.pl candidate_query_ids orig_query_filename > selected_candidate_sequences.fasta
+</pre>
+	</li>
+</ol>
+
+</div> <!--End Main-inner-->	
+</div> <!--End Main-->
+<div id="footer">
+Copyright &copy; 2021
+Regents of the University of California. All rights reserved.
+</div> <!--End Footer-->
+</body>
+</html>
+
+
+

@@ -1,0 +1,223 @@
+<!DOCtype html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="bioinformatics,genomics" />
+<meta http-equiv="X-Frame-Options" content="deny" />
+<title>NaPDoS | Run Analysis </title>
+<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
+<script type="text/javascript" src="scripts/AccordionMenus.js"></script>
+<style type="text/css">
+.AccordionTitle, .AccordionContent/* , .AccordionContainer */
+{
+  position:relative;
+}
+.AccordionTitle
+{
+ /*  height:20px; */
+  overflow:hidden;
+  cursor:pointer;
+  font-weight: bold;
+    font-size: 2em;
+ /*  display:table-cell; */
+  -moz-user-select:none;
+  padding-bottom:20px;
+}
+.AccordionContent
+{
+  height:0px;
+  display:none;
+  background-color: #EFEFEF;
+    position:relative;
+  	min-height: 500px;
+	padding-bottom:30px;
+}
+</style>
+
+</head>
+<body>
+<div id="header" class="centered">
+<a href="napdos_home_v2.html"> <img src="image/NaPDoS_blue_2.png" alt = "NaPDoS logo" /></a>
+<div id="subtitle">Natural Product Domain Seeker</div>
+<div id="topmenu" class="centered">
+<ul>
+<li><a href="napdos_home_v2.html">Home</a></li>
+<li ><a href="quickstart.html">QuickStart</a></li>
+<li class="current"><a href="run_analysis_v2.html">Run Analysis</a></li>
+<li><a href="classification.html">Classification</a></li>
+<li><a href="pathways_v2.html">BGCs</a></li>
+<li><a href="contact_v2.html">Contact Us</a></li>
+</ul>
+<div class="clear"></div>
+</div> <!--End Topmenu-->
+</div><!--End Header-->
+<div id="main" class="centered shadowmain">
+<div id="maininner">
+
+<h1>PKS/NRPS Domain Search</h1>
+
+<p>Choose a domain and query type, then enter your data to identify candidate KS and/or C domains.<br />
+
+Optional <b><a href="#advanced_settings">Advanced Settings</a></b> can be used to customize program parameters.</p>
+<hr />
+
+	<form enctype="multipart/form-data" action="../cgi-bin/process_request_napdos2.cgi" method="post">
+		<input type="hidden" name="config_filename"  value="napdos_dev_sdsc.cfg" />
+		<table  border="0" cellpadding="5" cellspacing="0">
+			<tr>					
+				<td align = "left">
+				<!--Choose reference database for domain type -->
+				<h3>Domain type</h3>
+					
+					&nbsp;&nbsp;&nbsp;<input name = "ref_seq_file" type = "radio" checked="checked" value = "all_KS_191020_1877.faa" />
+					KS domains<br />
+					
+					&nbsp;&nbsp;&nbsp;<input name = "ref_seq_file" type = "radio" value = "all_C_190411_273.faa" /> 
+					C domains<br />
+					
+				</td>
+			</tr>
+			</table>
+			<hr />
+			<table>
+			<tr>											
+				<td align = "left" >
+				<!--Choose search type (radio button) -->
+				<h3>Query type</h3>				
+					<!-- 
+					&nbsp;&nbsp;&nbsp;<input name = "query_type" type = "radio" checked="checked" value = "pcr" />
+					PCR amplification products (DNA)<br />	
+					 -->				
+					&nbsp;&nbsp;&nbsp;<input name = "query_type" type = "radio"  checked="checked" value = "aa" /> 
+					Amino acid sequences <br />
+					&nbsp;&nbsp;&nbsp;<input name = "query_type" type = "radio" value = "genome" /> 
+					Nucleic acid sequences <br />										
+					<br />
+					<b>Note:</b> Unassembled Illumina sequencing reads from genomes and metagenomes       
+					and metagenomes are usually too short to obtain accurate PKS and NRPS domain
+					predictions. Minimum DNA sequence lengths of at least 650 nucleotides are
+					recommended, allowing sequence alignments to cover least 50% of
+					verified PKS and NRPS domains, which are typically about 1250 nucleotides
+					(425 amino acids) long.
+				</td>
+			</tr>
+			</table>
+			<hr />
+			<table>
+			<tr>
+				<td>	
+				<h3>Query sequence</h3>
+					Enter or paste sequence(s) in <a href = "http://blast.ncbi.nlm.nih.gov/blastcgihelp.shtml">FASTA</a>
+					 format, or upload a FASTA file.
+					Please avoid using sequence id numbers containing non-standard characters (e.g. commas,
+					slashes, colons, parentheses, ampersands, etc), as well as ambiguity codes "R" and "Y" for nucleic acid sequence files. 
+					<p>
+					Note: Current size limit for uploaded files is 500 MB. For larger files, please 
+					consider our suggestions for <a href =http://npdomainseeker.sdsc.edu//napdos2/prefiltering.html>  
+					file size management</a> before submission. Large nucleotide sequence files may take several
+					minutes to load. 
+					</p>
+						
+					<textarea name="Sequence" cols="60" rows="15"></textarea>
+					<p>Upload a file: 
+						<input type="file" name="seqfile" size="25" />	
+					</p>								
+				
+				<p>	
+				<button type="submit" >S E E K</button>
+				<button type="reset" >R E S E T</button>
+					</p>															
+				</td>		
+				<td width = "10%">&nbsp;</td>		
+			</tr>
+			
+	</table>
+		<hr />
+
+<!-- Accordion menu-->
+
+  <a name = "advanced_settings"></a>
+    
+  <div class="AccordionTitle" onclick="runAccordion(1);" onselectstart="return false;">
+	<img height = "40" src= "image/down_arrow.png"></img> 
+	<u>Advanced Settings</u>
+	<img height = "40" src= "image/down_arrow.png"></img> 
+  
+  </div>
+  <div id="Accordion1Content" class="AccordionContent">
+  <table width = "100%">
+	<!-- <tr align="left" > -->
+<!-- 		<td colspan = "2"> -->
+<!-- 	 -->
+<!-- 	<h1>Advanced Settings</h1> -->
+<!-- 		</td> -->
+<!-- 	</tr> -->
+	<tr align="left">
+		<td colspan = "2">
+	  Sensitivity may be increased by choosing higher e-values and shorter minimum match lengths,	
+	  but these adjustments may also increase false positives. Conversely, selectivity can be improved 
+	  with lower e-values and longer minimum match lengths, at the cost of decresed sensitivity.
+	  <br /><br />
+		</td>
+	</tr>
+	</table>
+	  <hr />		
+	<table  border="0" cellpadding="5" cellspacing="0" width = "75%">
+		<tr>
+			<td align = "left">
+			<b>BLASTP <br /> e-value cutoff</b><br />
+				<select name="path_blast_evalue">
+					<option value="1e-8"> 1e-8 (default)</option>
+					<option value="1e-5"> 1e-5 </option>
+					<option value="1e-20"> 1e-20 </option>
+					<option value="1e-10"> 1e-10</option>
+					<option value="1e-1">0.1</option>
+					<option value="1">1.0</option>
+				</select>
+				<br /><br />
+			</td>	
+			<td align = "left">
+			<b>Minimum <br /> align length</b><br />
+				<select name="min_matchlength">	
+					<option value="200"> 200 aa (600 nt) (default) </option>
+					<option value="150"> 150 aa (450 nt)</option>
+					<option value="100"> 100 aa (300 nt)</option>
+					<option value="50"> 50 aa (150 nt)</option>
+					<option value="30"> 30 aa (90 nt)</option>
+				</select>
+				<br /><br />
+			</td>
+			
+			<td <br /><br />
+				</td>
+				<td >
+				</td>
+		</tr>
+		</table>
+		<hr />
+	<table  border="0" cellpadding="5" cellspacing="0" width = "80%">
+		<tr>
+			<td colspan = "2">
+			<p>
+				<button type="submit" >S E E K</button>
+				<button type="reset" >R E S E T</button>
+			</p>
+			</td>
+		</tr>
+	</table>		
+		</form>
+   
+  </div>
+</div>
+
+</div>
+</div> <!--End Main-->
+<div id="footer">
+Copyright &copy; 2021
+Regents of the University of California. All rights reserved.
+</div> <!--End Footer-->
+</body>
+</html>
+
+

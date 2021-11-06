@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="PKS, NRPS, polyketide, non-ribosomal peptide, natural product, 
+	secondary metabolism, condensation domain, c-domain, Sheila Podell" />
+<meta name="description" content="NaPDos Natural Product Domain seeker, a tool for rapid detection 
+	and analysis of secondary metabolite genes" />
+<title>NaPDoS | Home</title>
+<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
+</head>
+<body>
+<div id="header" class="centered">
+<a href="napdos_home.html"><img src="image/NaPDoS_blue_2.png" alt = "NaPDoS logo" /></a>
+<div id="subtitle">Natural Product Domain Seeker </div>
+<div id="topmenu" class="centered">
+<ul>
+<li class="current"><a href="napdos2/napdos_home_v2.html">Home</a></li>
+<li> <a href="quickstart.html">QuickStart</a></li>
+<li><a href="run_analysis_v2.html">Run Analysis</a></li>
+<li><a href="classification.html">Classification</a></li>
+<li><a href="pathways_v2.html">BGCs</a></li>
+<li><a href="contact_v2.html">Contact Us</a></li>
+</ul>
+<div class="clear"></div>
+</div> <!--End Topmenu-->
+</div><!--End Header-->
+<div id="main" class="centered shadowmain">
+<div id="maininner">
+<h1 >Natural Product Domain Seeker</h1>
+
+<img style="margin-bottom:-5px; margin-left:30px" 
+src="new_images/leesa_flowchart_2021.png" alt='np2_intro_2021 'width = "75%" />
+
+<!-- <h3 style="margin-left:5px;">NaPDoS Features</h3> -->
+<h2>NaPDoS Features</h2>
+<table width = "90%" cellspacing = "5">
+<tr align="left">
+<td >
+	<ul style="margin-top:-10px;">
+	 <li>NaPDoS2 detects and classifies <b>ketosynthase (KS)</b> and <b>condensation (C)</b>
+		domains from genomic, metagenomic, and PCR amplicon sequence data.</li>
+	 <li>A phylogeny-based classification scheme is used to make functional
+		predictions about the larger polyketide synthase (PKS) and non-ribosomal peptide
+		synthetase (NRPS) genes in which these domains reside. </li>
+	 <li> NaPDoS2 provides a rapid method to assess biosynthetic potential
+		without the need for fully assembled biosynthetic gene clusters (BGCs), instead
+		relying on short KS and C domain sequence tags-- this approach is particularly
+		useful for amplicons, poorly assembled genomes, or metagenomes.</li>
+	 <li>The output can be used to assess the biosynthetic potential of large
+		datasets and make predictions about the types of specialized metabolites that
+		might be produced.</li>
+	</ul>
+</td >
+</tr>
+<tr>
+<td>Check out our <a href="http://npdomainseeker.sdsc.edu/napdos2/quickstart.html" target="_blank"> 
+<b>QUICK START </b></a>page for instructions on how to 
+<a href="http://npdomainseeker.sdsc.edu/napdos2/run_analysis_v2.html" target="_blank"><b>RUN ANALYSES</b></a>. See
+the complete <a href="np2_documentation.pdf" target="_blank"><b>DOCUMENTATION</b> </a> 
+ (right-click to download) for more details and a complete
+tutorial. </td>
+</tr>
+<tr>
+<td>
+<h3 >
+<!-- <a href="http://npdomainseeker.sdsc.edu/napdos2/napdos_home_v2.html">NaPDoS</a>  --> 
+Upgrades in Version 2</h3>
+<ul  style="margin-top:-10px;">
+	<li>50-fold faster analysis time</li>
+	<li>Increased query capacity to 500,000 individual sequences and 500 MB per job</li>
+	<li>A major expansion of the taxonomic and functional diversity represented in the KS reference database</li>
+	<li>An enhanced KS <a href="http://npdomainseeker.sdsc.edu/napdos2/classification.html" target="_blank" >classification</a> scheme. </li>
+</ul>
+</td>
+</tr>
+<tr>
+	<td>
+<h3 style="margin-top:0px;">Reference Citation</h3>
+<p  style="margin-top:-10px;">	
+If you find the NaPDoS tool useful for your work, please cite: <br />
+</p>
+<p style="margin-left:10px;" />Klau LJ, Podell S, Creamer KE, Demko AM, Singh HW, Allen E, Moore BM,
+Ziemert N, Letzel AC, Jensen PR. The Natural Product Domain Seeker (NaPDoS)
+version 2: Relating ketosynthase phylogeny to biosynthetic function. (in
+preparation)
+</p>
+<p style="margin-left:10px;" />Ziemert N, Podell S, Penn K, Badger JH, Allen E, Jensen PR 
+	<a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0034064" target="_blank">
+	The Natural Product Domain Seeker NaPDoS: A Phylogeny Based Bioinformatic Tool to
+	Classify Secondary Metabolite Gene Diversity.</a> PLoS One.
+	2012;7(3):e34064 Epub 2012 Mar 29. PubMed PMID: 22479523
+</p>
+
+</td>
+</tr>
+</table>
+<br />
+
+<h2 style="margin-top:-10px;">What Are Natural Products?</h2>
+<!-- <p style= "width:90%; overflow:auto ; " > -->
+<p>
+Natural products are organic compounds produced by living organisms. They are
+generally not considered essential for normal growth or reproduction but instead
+have ecological functions related to communication, defense, competition, and
+reproduction among others. Natural products are an important source of medicines
+including antibiotics and anticancer agents (Li and Vederas 2009) and were
+traditionally discovered using bioassays to guide their isolation. Ready access
+to DNA sequence data, coupled with a better understanding of the genetic basis
+of natural product biosynthesis, has created opportunities to develop
+sequence-based approaches to natural product discovery (Zerikly et al. 2009;
+Blin et al. 2021). </p>
+
+<h3>Polyketide Synthases and Nonribosomal Peptide Synthetases</h3>
+
+<p>PKS and NRPS BGCs account for many of the most important natural products
+discovered to date (Fischbach and Walsh 2006). The enzymes encoded by these BGCs
+assemble polyketides and nonribosomal peptides from simple carboxylic acid and
+amino acid building blocks, respectively. KS and C domains play critical roles
+in the assembly process by covalently joining extender units in polyketide
+biosynthesis and catalyzing peptide bond formation in non-ribosomal peptide
+biosynthesis. Importantly, KS and C domain phylogenies have proven highly
+informative of PKS and NRPS organization and function (Rausch et al. 2007;
+Jenke-Kodama and Dittmann 2009; Jenke-Kodama et al. 2005; Metsa-Ketela et al.
+2002). These phylogeny based predictions form the basis of the NaPDoS2
+classification scheme (Ziemert et al. 2012; Klau et al. 2021).</p>
+
+<h2>References</h2>
+<ul>
+<li>Blin, K., Shaw, S., Kloosterman, A. M., Charlop-Powers, Z., van Wezel, G.
+P., Medema, M. H., & Weber, T. (2021). antiSMASH 6.0: improving cluster
+detection and comparison capabilities. Nucleic acids research, 1.
+</li>
+<li>Fischbach MA, Walsh CT (2006) Assembly-line enzymology for polyketide and
+nonribo- somal Peptide antibiotics: logic, machinery, and mechanisms. Chem Rev
+106, 3468-3496. 
+</li>
+<li>Jenke-Kodama H, Dittmann E (2009) Evolution of metabolic diversity: Insights
+from microbial polyketide synthases. Phytochemistry. 
+</li>
+<li>Jenke-Kodama, H., A. Sandmann, R. Mueller, and E. Dittmann. 2005.
+Evolutionary implications of bacterial polyketide synthases. Mol. Biol. Evol.
+22:2027-2039.
+</li>
+<li>Li JW, Vederas JC. (2009) Drug discovery and natural products: end of an era
+or an endless frontier? Science 325, 161-165. 
+</li>
+<li> Mets<span>&#228;</span>-Ketel<span>&#228;</span>, M., Halo, L., Munukka,
+E., Hakala, J., M<span>&#228;</span>nts<span>&#228;</span>l<span>&#228;</span>,
+P., & Ylihonko, K. (2002). Molecular evolution of aromatic polyketides and
+comparative sequence analysis of polyketide ketosynthase and 16S ribosomal DNA
+genes from various Streptomyces species. Applied and Environmental Microbiology,
+68(9), 4472-4479.
+></li>
+<li>Rausch, C., I. Hoof, T. Weber, W. Wohlleben, and D. H. Huson (2007)
+Phylogenetic analysis of condensation domains in NRPS sheds light on their
+functional evolution. BMC Evol Biol 7:78.
+</li>
+<li>Zerikly M, Challis GL (2009) Strategies for the discovery of new natural
+products by genome mining. ChemBioChem 10, 625-633.
+</li>
+</ul>
+<!-- &#228; -->
+
+</div> <!--End Main-inner-->
+</div> <!--End Main-->
+<div id="footer">
+Copyright &copy; 2021
+Regents of the University of California. All rights reserved.
+</div> <!--End Footer-->
+</body>
+</html>

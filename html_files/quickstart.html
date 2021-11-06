@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="bioinformatics,genomics" />
+<title>NaPDoS | Quick Start</title>
+<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
+</head>
+<body>
+<div id="header" class="centered">
+<a href="napdos_home.html"> <img src="new_images/NaPDoS_blue_2.png" alt = "NaPDoS logo" /></a>
+<div id="subtitle">Natural Product Domain Seeker</div>
+<div id="topmenu" class="centered">
+<ul>
+<li><a href="napdos_home_v2.html">Home</a></li>
+<li class="current"> <a href="quickstart.html">QuickStart</a></li>
+<li><a href="run_analysis_v2.html">Run Analysis</a></li>
+<li><a href="classification.html">Classification</a></li>
+<li><a href="pathways_v2.html">BGCs</a></li>
+<li><a href="contact_v2.html">Contact Us</a></li>
+</ul>
+<div class="clear"></div>
+</div> <!--End Topmenu-->
+</div><!--End Header-->
+<div id="main" class="centered shadowmain">
+<div id="maininner">
+<h1>Quick Start</h1>
+
+<p style="font-size:110%; width:95%">These 5 steps will help get you started, but 
+please be sure to read the <a href="#interpret_results">interpretation</a> tips below, and 
+download our full  <a href="np2_documentation.pdf" target="_blank"><b>documentation</b> </a> for important details.</p>
+
+
+<ol>
+	<li><b>Gather Sequences</b></li>
+	<ul>
+	<li><p>Sequences can be either nucleic or amino acids, from genomic, metagenomic, or amplicon sources,
+	but must be in  
+	<a href = "http://blast.ncbi.nlm.nih.gov/blastcgihelp.shtml" target="_blank">FASTA</a> format. </p></li>
+	<li><p>Please avoid using non-standard characters 
+	(e.g. commas, slashes, colons, parentheses, ampersands, etc) 
+	in file names, identifiers, or sequences,
+	as well as ambiguity codes "R" and "Y" for nucleic acid sequence files.</p></li>
+	<li><p> Maximum file size limits are currently set at &#0060; 500,000 sequences or &#0060; 500 MB. 
+	For larger data sets (and faster analysis), please see our 
+	<a href =http://npdomainseeker.sdsc.edu//napdos2/prefiltering.html target="_blank">  
+	file size management</a> 
+	page for ways to pre-filter and/or subdivide your data into smaller batches before submission. </p></li>
+	</ul>
+	
+<li><b>Select Parameters</b></li>
+	<ul>
+	<li><p>Go to the <a href =http://npdomainseeker.sdsc.edu//napdos2/run_analysis_v2.html>Run Analysis</a> page.</p></li>
+	<li><p>Select KS or C domain (NaPDoS2 can only detect one domain type per analysis).</p></li>
+	<li><p>Select query sequence type: either amino acid or nucleic acid.
+	(Nucleic acids will be automatically translated into all 6 reading frames.)</p></li>
+	<li><p>Choose a local sequence file to upload, or paste sequences into the window.</p></li>
+	<li><p><b>Advanced Settings</b> can be used to adjust <a href="#blastp_stringency">BLASTP stringency</a> (default e-value = 1e-8)
+		and <a href="#align_length">minimum alignment</a> (default length = 200aa/600nt). <b>Caution:</b> selecting 
+		less rigorous match criteria may decrease reliability of results.</p></li>
+	</ul>	
+	
+<li><b>Run Analysis</b></li>
+	<ul>
+	<li><p>Click <b>SEEK</b>, wait for JOB ID assignment.</p></li>
+	<li><p>Review the search parameters and estimated completion time displayed.</p></li>
+	<li><p>Click <b>SUBMIT JOB</b> to continue the analysis.</p></li>
+	</ul>
+	
+<li><b>Select Display Options</b></li>
+	<ul>
+	<li><p> When the analysis is complete, a page will appear indicating how many domains were detected.</p></li>
+	<li><p>For nucleotide sequence queries:  There is an option to <b>DOWNLOAD</b> a
+	table listing the domain matches with their nucleotide coordinates and
+	translation frames (see  <a href="np2_documentation.pdf" target="_blank">Documentation </a> for interpretation
+	of this table). Click <b>CONTINUE ANALYSIS</b> to display the <b>Domain Classification
+	Summary </b>page. </p></li>
+	<!-- 
+<li><p>Click <b>CONTINUE ANALYSIS</b> to display the <b>Domain Classification
+	Summary page. </b>.</p></li>
+ -->
+	<li><p>For amino acid sequence queries the <b>Domain Classification Summary </b>
+	will be displayed immediately after analysis is complete. </p></li>
+	<li><p>	You can view and download the results summary table, select specific
+	classes/subclasses and <b>VIEW A SUBSET</b> of the results, or click <b>VIEW ALL MATCHES</b>
+	to see complete <b>Database Search Results</b>.</p></li>
+	<li><p>Check out the <a href="#interpret_results">interpretation</a> tips below. Detailed information about the classification scheme can be found on the
+ <a href =http://npdomainseeker.sdsc.edu//napdos2/classification.html target="_blank">
+ CLASSIFICATION</a> web page and in the full  <a href="np2_documentation.pdf" target="_blank"> Documentation </a>.</p></li> 
+	</ul>
+<li><b>Download Results</b></li>
+	<ul>
+	<li><p>From the <b>Database Search Results</b> page, sequences can be
+selected to <b>View nucleotide coordinates</b> for all trimmed domain candidates
+(nucleotide sequence queries only), <b>Output selected sequences</b> in fasta format,
+or <b>Output Alignment of your query sequences</b> to the top database hits.</p></li>
+
+	<li><p>All result tables can be downloaded using the <b>DOWNLOAD</b> button (click to view,
+	right click to save).<li><p
+	
+	<li><p>Click on <b>domain class</b> or <b>BGC match</b> links to learn more about 
+	related domain categories and biosynthetic gene clusters in the NaPDoS2 database.<li><p
+
+	<li><p>If results include &#0060; 100 KS or C domains, selected sequences can also be viewed
+	 in phylogenetic context relative to functionally characterized reference
+	 domains (<b>Construct Tree</b>), and downloaded as an SVG image or in Newick tree format.</p></li>
+	
+	 <li><p> The 100 domain tree-building limit has been set due to computational resource limitations.
+		If more than 100 domains are detected initially, tree construction can be enabled 
+		by re-running the analysis using a smaller subset of the original sequences.</p></li>
+	</ul>
+</ol>
+
+<p  style="font-size:100%;margin-left:25px">	
+<b>If you find NaPDoS to be useful for your work, please cite: </b><br />
+</p>
+<p style="margin-left:35px;" />Klau LJ, Podell S, Creamer KE, Demko AM, Singh HW, Allen E, Moore BM,
+Ziemert N, Letzel AC, Jensen PR. The Natural Product Domain Seeker (NaPDoS)
+version 2: Relating ketosynthase phylogeny to biosynthetic function. (in
+preparation)
+</p>
+<p style="margin-left:35px;" />Ziemert N, Podell S, Penn K, Badger JH, Allen E, Jensen PR 
+	<a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0034064">
+	The Natural Product Domain Seeker NaPDoS: A Phylogeny Based Bioinformatic Tool to
+	Classify Secondary Metabolite Gene Diversity.</a> PLoS One.
+	2012;7(3):e34064 Epub 2012 Mar 29. PubMed PMID: 22479523
+</p>
+
+<a name = "interpret_results"></a>
+<h2 style="margin-top:30px;">Interpreting Results</h2>
+ 
+<h3>BLASTP tophit category</h3> 
+<table width = "95%" cellspacing = "10"> 
+<tr>
+<td valign="top" >
+BLAST matches to reference domain sequences provide a good starting point
+for predicting domain functionality, but are less
+reliable  than multiple sequence alignments
+and the phylogentic trees built from them. This is because BLAST scores
+represent average, overall similarities distributed over the entire domain, considering 
+only two sequences at a time, whereas multiple sequence alignments and tree topologies 
+combine information from many sequences together to reveal relationships based on 
+more specific, potentially localized features they may have in common.
+	</p>
+	
+	<p>
+	Typical amino acid percent identities vary widely within different functional
+domain categories, due at least partly to variability in the number and
+diversity of reference examples available. The following chart of leave-one-out
+(jack-knife) cross validation scores, shows averages and expected ranges for
+members of different functional classes. These values were obtained by finding
+the closest, non-self database match for each NaPDoS2 reference domain, and
+comparing amino acid match statistics to other members of the same functional
+classification category. Brackets after each category on the x-axis indicate the
+number of database reference sequences analyzed for that category. 	
+	</p>
+	</td>
+	</tr>
+	
+	</table>
+	<table width = "90%" cellspacing = "10">
+	<tr>
+	<td align = "center">
+		<a href="new_images/ks_domain_class_blast_scores.png" target = "_blank">
+		<img src="new_images/ks_domain_class_blast_scores.png" class="bordered" alt="ks_domain_class_blast_scores.png" width = "525" />
+		</a>
+	</td>
+
+	<td align = "center" width = "150" valign = "top">
+		<a href="new_images/c_domain_class_blast_scores.png" target = "_blank">
+		<img src="new_images/c_domain_class_blast_scores.png" class="bordered" alt="c_domain_class_blast_scores.png" width = "130" />	
+		</a>
+	</td>
+	</tr>
+	</table>	
+
+	<table>	
+	<tr>
+	 <a name = "blastp_stringency"></a>
+<h3>BLASTP e-value cutoff</h3> 	
+	<tr>
+	 
+	<p>Recommended e-value settings for routine use are based on and Receiver Operating
+	Characteristic (ROC) curves, calculated using
+	leave-one-out (jack-knife) cross validation statistics for 213 non-redundant
+	known positive and 308 negative control examples. The default cutoff for NaPDoS version 2 has been set at
+	1e-8, an e-value that maximizes sensitivity with the minimum possible number of
+	false positives. Users willing to accept higher false positive rates may select
+	less stringent cutoff values using Advanced
+	settings</a>.
+</p>
+	</tr>
+	<br /> 
+	<tr>
+	<a href="new_images/ROC_napdos1_vs_napdos2_detail.png" target = "_blank">
+	<img src="new_images/ROC_napdos1_vs_napdos2_detail.png" class="bordered" alt="ROC_napdos1_vs_napdos2_detail.png" width = "50%" />
+	</a><br />
+	</tr>		
+<a name = "align_length"></a>
+	
+<h3>Sensitivity and accuracy versus alignment length</h3> 	
+	<tr> 
+	Default minimum alignment lengths for NaPDoS2 have been set at 200 amino acids, but 
+	users should be aware that genomic or metagenomic sequences covering randomly placed domain fragments cannot
+	provide the same sensitivity and accuracy as full length KS and C domain
+	sequences, which are typically around 425 amino acids (1275 nucleotides) long.
+	Unassembled, raw Illumina sequencing reads from genomes and metagenomes (typically &lt; 150
+	nucleotides, or 30 translated amino acids) are poorly suited for obtaining useful
+	PKS and NRPS domain predictions, unless you get very lucky about their position 
+	within a protein. 
+	Targeted PCR amplicons provide better sensitivity than
+	similarly sized random fragments, but may still be too short for detailed, accurate
+	functional classification. 						 	
+	</tr>
+	</table>
+	
+	<table>
+		<tr>
+		<td>
+		<p>  
+		Large declines in sensitivity and classification accuracy were observed when
+		full-length, non-redundant positive control domains were split into smaller,
+		overlapping subsequences of less than 100 amino acids (300 nucleotides), as
+		shown below. Relatively novel domain classes, with fewer available reference examples, 
+		were the ones most likely to be mis-classified in leave-one-out 
+		cross validation tests. Sensitivity declines can be partially
+		offset by decreasing BLAST stringency, but this adjustment may also increase 
+		false positives and mis-classifications, depending on the nature of the data
+		being analyzed.
+			</p>
+		</td>
+		</tr>
+		</table>
+	<table width = "95%" cellspacing = "10">
+	<tr>
+	<td align = "center">
+		<a href="new_images/category_accuracy_1e-10.png" target = "_blank">
+		<img src="new_images/category_accuracy_1e-10.png" class="bordered" alt="new_images/category_accuracy_1e-10.png" width = "200" />	
+		</a>
+	</td>
+
+	<td align = "center">
+		<a href="new_images/category_accuracy_1e-8.png" target = "_blank">		
+		<img src="new_images/category_accuracy_1e-8.png" class="bordered" alt="category_accuracy_1e-8.png" width = "200" />	
+		</a>
+	</td>
+	<td align = "center" >
+		<a href="new_images/category_accuracy_1e-5.png" target = "_blank">	
+		<img src="new_images/category_accuracy_1e-5.png" class="bordered" alt="category_accuracy_1e-5."width = "200" />	
+		</a>
+	</td>
+	</tr>
+	</table>
+	
+</table>
+
+</div> 
+</div> <!--End Main--> 
+<div id="footer">
+Copyright &copy; 2021
+Regents of the University of California. All rights reserved.
+</div> <!--End Footer-->
+</body>
+</html>

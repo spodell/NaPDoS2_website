@@ -1,0 +1,300 @@
+<!DOCtype html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="PKS, NRPS, polyketide, non-ribosomal peptide, natural product, 
+	secondary metabolism, condensation domain, c-domain, Sheila Podell" />
+<meta name="description" content="NaPDos Natural Product Domain seeker, a tool for rapid detection 
+	and analysis of secondary metabolite genes" />
+<title>NaPDoS | Classification </title>
+<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
+</head>
+<body>
+<div id="header" class="centered">
+<a href="napdos_home.html"> <img src="new_images/NaPDoS_blue_2.png" alt = "NaPDoS logo" /></a>
+<div id="subtitle">Natural Product Domain Seeker</div>
+<div id="topmenu" class="centered">
+<ul>
+<li><a href="napdos_home_v2.html">Home</a></li>
+<li> <a href="quickstart.html">QuickStart</a></li>
+<li><a href="run_analysis_v2.html">Run Analysis</a></li>
+<li class="current"><a href="classification.html">Classification</a></li>
+<li><a href="pathways_v2.html">BGCs</a></li>
+<li><a href="contact_v2.html">Contact Us</a></li>
+</ul>
+<div class="clear"></div>
+</div> <!--End Topmenu-->
+</div><!--End Header-->
+<div id="main" class="centered shadowmain">
+<div id="maininner">
+
+<a name="Classification"></a>
+<h1>Classification Overview</h1>
+
+<!-- <p style="width:90%;"> -->
+<p>
+	The NaPDoS2 classification scheme is summarized below. For more detailed descriptions of the KS and C
+	domain categories and relevant literature see the downloadable 
+	<a href="np2_documentation.pdf" target="_blank">DOCUMENTATION</a> file.
+</p>
+
+</p> Domains have been classified into different categories (i.e. class and subclass).
+Each category corresponds to a phylogenetic clade (or in some cases multiple clades) of
+NaPDoS2 KS or C domains, which were generated from the NaPDoS2 reference database sequences.  
+Clade descriptions reflect functional characterizations of the PKS or
+NRPS genes from which their component domain sequences were derived. These classifications
+can provide insight into: </p>
+<ol>
+	<li>product structural features (e.g., PUFAs,  enediynes, aromatic polyketides)</li>
+	<li>gene architecture (e.g., cis- or trans-AT)</li>
+	<li>taxonomic groups in which the sequence resides (e.g., bacteria, fungi, protist, metazoa).</li>
+</ol>
+
+<p>
+	Query sequences are assigned classifications according to their the top NaPDoS2
+	BLAST match, providing insight into the biosynthetic potential of the sample.
+	The abbreviations used in the database, reference tree, and NaPDoS2 output are
+	given in parentheses below. 
+</p>
+
+<a name = "KS_domains">
+<a name = "domain_subgroup_clades">
+<h2>KS Domains</h2>
+
+<p>
+	Delineated into three primary groups: FAS, type I PKS, and type II PKS.
+</p>
+
+
+<h3>1. Fatty Acid Synthase (FAS)</h3>
+
+
+<a name ="type_I_FAS"></a>
+<b>Class: Type I FAS (FASI)</b><br/>
+Large multifunctional proteins responsible for fatty acid biosynthesis.
+
+<ul>
+	<li><b>Subclass: Bacteria and fungi (FASI)</b><br/>
+	Observed in bacteria and fungi.<br/><br/>
+	</li>
+	<li><b>Subclass: Metazoa (MetazoaFASI)</b><br/>
+	Observed in the phyla Chordata and Nematoda<br/><br/>
+	</li>
+	<li><b>Subclass: Protist (ProtistFASI)</b><br/>
+	Observed in the phylum Apicomplexa (Alveolata)<br/>
+	</li>
+</ul>
+
+<a name ="type_II_FAS"></a>
+<b>Class: Type II FAS (FASII)</b><br/>
+Discrete, monofunctional proteins responsible for fatty acid biosynthesis.
+
+	
+<h3>2. Type I PKS</h3>
+Large multifunctional proteins with a domain and modular organization.<br /><br />
+
+<a name ="type_I_modular_cis-AT"></a>
+<b>Class: Modular cis-AT (cisAT)</b>
+Canonical type I PKSs containing KS, AT, and ACP domains and functioning in an
+assembly-line fashion.
+
+<ul>
+	<li><b>Subclass: Olefin synthase (cisOLS)</b><br/>
+	Associated with the biosynthesis of a terminal olefin.<br/><br/>
+	</li>
+	<li><b>Subclass: Loading module (cisloading)</b><br/>
+	KS in the first module of cis-AT modular PKS in which the catalytic cysteine
+has been replaced with glutamine (sometimes called KSQ).<br/><br/>
+	</li>
+	<li><b>Subclass: Hybrid (cisHybridKS)</b><br/>
+	Downstream of a peptidyl carrier protein (PCP) domain. Catalyzes the
+condensation of an acyl group on a PCP-tethered intermediate.<br/>
+	</li>
+	<li><b>Subclass: Tandem ECH (cistandemECH)</b><br/>
+	Associated with gene cassettes involved in the introduction of a 
+beta-branch to a beta-keto group (often referred to as beta-branching
+cassettes).<br/>
+	</li>
+</ul>
+
+<a name ="type_I_iterative_cis-AT"></a>
+<b>Class: Iterative cis-AT (iPKS)</b><br/>
+Cis-AT type I PKSs that function iteratively, observed in bacteria and fungi.
+
+<ul>
+	<li><b>Subclass: Polyunsaturated fatty acid (iPKSPUFA)</b><br/>
+	Produce long chain, unsaturated fatty acids that contain multiple cis double bonds.<br/><br/>
+	</li>
+	<li><b>Subclass: Enediyne (iPKSenediyne)</b><br/>
+	Produce nine- or ten-membered rings that contain a conjugated alkyne-alkene-alkyne moiety.<br/><br/>
+	</li>
+	<li><b>Subclass: Aromatic (iPKSaromatic)</b><br/>
+	Produce simple aromatic compounds that usually consist of mono- or bicyclic rings.<br/><br/>
+	</li>
+	<li><b>Subclass: Polycyclic tetramate macrolactam-like (iPKSPTM)</b><br/>
+	Produce compounds usually consisting of a tetramic acid moiety and 2-3 rings
+	fused to a macrolactam.<br/><br/>
+	</li>
+	<li><b>Subclass: Non-reducing (iPKSNR)</b><br/>
+	Associated with PKSs that lack all KR, DH, and ER domains. Produce mono- or
+	polycyclic aromatic polyketides from poly-beta-keto chains. Observed in
+	fungi.<br/><br/>
+	</li>
+	<li><b>Subclass: Partially reducing (iPKSPR)</b><br/>
+	Associated with PKSs that lack some KR, DH, and ER domains. Produce simple
+	mono- or bicyclic aromatic compounds similar to the products of bacterial
+	aromatic iPKSs. Observed in fungi.<br/><br/>
+	</li>
+	<li><b>Subclass: Highly reducing (iPKSHR)</b><br/>
+	Associated with PKSs that possess all KR, DH, and ER domains. Produce linear
+	and cyclic non-aromatic compounds. Observed in fungi.<br/>
+	</li>
+</ul>
+
+<a name ="type_I_trans-AT"></a>
+<b>Class: trans-AT</b><br/>
+Modular, assembly line PKS in which the AT domain(s) are freestanding as opposed to occuring in the module. 
+
+<ul>
+	<li><b>Subclass: B domain (transBdomain)</b><br/>
+	KS domains that occur together with a branching (B) domain and facilitate chain branching.<br/><br/>
+	</li>
+	<li><b>Subclass: Hybrid (transHybridKS)</b><br/>
+	Similar to cisHybridKSs (see above) except the AT domain occurs in trans.<br/><br/>
+	</li>
+	<li><b>Subclass: Hybrid non-elongating KS (transHybridKS0)</b><br/>
+	Non-elongating KS domains (KS0) in trans-AT modules that follow an NRPS module.<br/>
+	</li>
+</ul>
+
+<a name ="type_I_Metazoan-type_PKS"></a>
+<a name ="type_I_Protist-type_PKS"></a>
+<b>Class: Metazoa (MetazoaPKS)</b><br/>
+Type I KS domains detected in metazoa.<br/><br/>
+
+<b>Class: Protist (ProtistPKS)</b><br/>
+Type I KS domains detected in protists.<br/>
+
+<a name ="type_II_aromatic"></a>
+<a name ="type_II_unclassified"></a>
+
+<h3>3. Type II PKS</h3>
+Discrete, monofunctional proteins.<br /><br />
+
+<b>Class: Aromatic (aromaticKSa) or (aromaticKSb)</b><br/>
+Heterodimers that consist of alpha and beta subunits and produce polycyclic
+aromatic compounds through the iterative decarboxylative condensation of
+malonyl-CoA extender units onto an acyl starting unit.<br/>
+
+<ul>
+	<li><b>Subclass: angucycline-derived I (angucyclineIKSa or angucyclineIKSb)</b><br/>
+	Compounds contain or were derived from an angular tetracyclic structure
+comprising a benzanthracene moiety. Most frequently initiated with acetyl-CoA
+starting unit.<br/><br/>
+	</li>
+	<li><b>Subclass: angucycline-derived II (angucyclineIIKSa or angucyclineIIKSb)</b><br/>
+	Distinguished from angucycline-derived I by initiation with a methylmalonyl-CoA starting unit.<br/><br/>
+	</li>
+	<li><b>Subclass: anthracycline-derived I (anthracyclineIKSa or anthracyclineIKSb)</b><br/>
+	Compounds possess a linear tetracyclic core derived from
+	7,8,9,10-tetrahydro-5,12-naphtacenoquinones. Initiated with acetyl-CoA starting
+	unit.<br/>
+	</li>
+	<li><b>Subclass: anthracycline-derived II (anthracyclineIIKSa or anthracyclineIIKSb)</b><br/>
+	Distinguished from anthracycline-derived I by initiation with methylmalonyl-CoA starting unit.<br/><br/>
+	</li>
+	
+	<li><b>Subclass: isochromanequinone-derived (isochromanequinoneKSa or isochromanequinoneKSb).</b><br/>
+	Compounds with a linear tricyclic core structure containing isochromane and quinone moieties often forming dimers.<br/><br/>
+	</li>
+	<li><b>Subclass: pentangular polyphenol-derived (pentangularpolyphenolKSa or pentangularpolyphenolKSb)</b><br/>
+	Produce long-chain polyphenols that form angular polycyclic core structures.<br/><br/>
+	</li>
+	<li><b>Subclass: tetracenomycin-derived (tetracenomycinKSa or tetracenomycinKSb)</b><br/>
+	Produce linear tetracyclic decaketide core structures resulting from nine
+	elongations of an acetyl-CoA starting unit.<br/><br/>
+	</li>
+	<li><b>Subclass: tetracycline-derived (tetracyclineKSa) or (tetracyclineKSb)</b><br/>
+	Produce compounds with a tetracyclic ring structure characterized by a
+	carboxamido moiety resulting from a malonamyl-CoA starting unit.<br/><br/>
+	</li>
+<li><b>Subclass: spore pigment (sporepigmentKSa or sporepigmentKSb)</b><br/>
+	Associated with the biosynthesis of streptomycete spore pigments (e.g. whiE
+	in S. coelicolor) although compounds are not well characterized.<br/>
+	</li>
+</ul>
+
+<a name ="type_II_beta-branching_cassette"></a>	
+<b>Class: Beta-branching cassettes (betabranch)</b><br/>
+KSs associated with HMGS cassettes that introduce alkyl branches to a beta-ketone.<br/><br/>
+
+
+<a name ="type_II_polyene"></a>
+<b>Class: Polyenes (polyeneKSa or polyeneKSb)</b><br/>
+Iteratively acting KSs that produce reduced, linear polyenes rather than
+polycyclic aromatic compounds.<br/><br/>
+
+<a name ="type_II_aryl_polyene"></a>
+<b>Class: Aryl polyenes (arylpolyeneKSa or arylpolyeneKSb)</b><br/>
+Iteratively acting PKSs that produce polyene chains with an aryl moiety that is
+often substituted.<br/><br/>
+
+<a name ="type II non-iterative"></a>
+<b>Class: Non-iterative (noniterative)</b><br/>
+Discrete monofunctional proteins that function as an assembly line to produce
+compounds such as pamamycin and nonactin.<br/>
+
+<a name = "C_domains"></a>
+<a name ="starter"></a>
+<a name ="LCL"></a>
+<a name ="DCL"></a>
+<a name ="cyclization"></a>
+<a name ="epimerization"></a>
+<a name ="dual"></a>
+<a name ="modified_amino_acid"></a>
+<a name ="hybrid_C"></a>
+<h2>C Domains</h2>
+
+<b>Class: Starter (starter)</b><br/>
+Typically, the first module of a NRPS usually does not contain a C domain. But,
+when present, these starter C domains acylate the first amino acid with a fatty
+acid, polyketide, or other molecule. <br/><br/>
+
+<b>Class: LCL (LCL)</b><br/>
+Catalyzes the formation of a peptide bond between two L-amino acids.<br/><br/>
+
+<b>Class: DCL (DCL)</b><br/>
+Catalyzes the formation of a peptide bond between an L-amino acid and a growing
+peptide ending with a D-amino acid. <br/><br/>
+
+<b>Class: Cyclization (cyclization)</b><br/>
+Catalyzes both peptide bond formation and the subsequent cyclization of
+cysteine, serine or threonine residues.<br/><br/>
+
+<b>Class: Epimerization (epimerization)</b><br/>
+Changes the chirality of the last amino acid in the chain from L to D.<br/><br/>
+
+<b>Class: Dual (dual)</b><br/>
+Catalyzes both condensation and epimerization reactions.<br/><br/>
+
+<b>Class: Modified amino acid (modifiedAA)</b><br/>
+Modifies the incorporated amino acid: for example the dehydration of serine to dehydroalanine.<br/><br/>
+
+<b>Class: Hybrid (hybridC)</b><br/>
+Occur in PKS-NRPS BGCs. The condensation domain that occurs immediately
+downstream of a PKS module; condenses an amino acid to a growing
+polyketide.<br/><br/>
+
+<b>Class: Condensation (condensation)</b><br/>
+Condensation domains with no known specialized functionality.<br/><br/>
+
+
+</div>
+</div> <!--End Main-->
+<div id="footer">
+Copyright &copy; 2021 
+Regents of the University of California. All rights reserved.
+</div> <!--End Footer-->
+</body>
+</html>
