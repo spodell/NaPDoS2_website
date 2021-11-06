@@ -46,9 +46,10 @@ What it does
 
   Script-calling order
   
-  ![napdos2_script_order](https://user-images.githubusercontent.com/24737584/140618423-aec059a9-0b21-4d97-b2e1-e724decc9199.png)
+  ![napdos2_script_order_small](https://user-images.githubusercontent.com/24737584/140618778-811dc638-b629-42ab-a7db-aea2515e7cfc.png)
 
-  
+
+ 
   Reference Citations
   
 	Klau LJ, Podell S, Creamer KE, Demko AM, Singh HW, Allen E, Moore BM, Ziemert N,
