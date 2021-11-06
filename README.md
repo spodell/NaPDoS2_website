@@ -37,7 +37,7 @@ What the NaPDoS2 website does:
 	
 	2. Diamond BLASTP search against a curated reference database to retrieve protein domains
 	
-	3. Retrieve reference database information on blast matches from MySQL database
+	3. Retrieve reference database information on blast matches from a custom MySQL database
 	
 	4. Tally category summary for matches in submitted data set
 	
