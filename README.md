@@ -55,7 +55,8 @@ What the NaPDoS2 website does:
 
   Script-calling order:
   
-  ![napdos2_script_order_small](https://user-images.githubusercontent.com/24737584/140618778-811dc638-b629-42ab-a7db-aea2515e7cfc.png)
+  ![napdos2_script_order_small](https://user-images.githubusercontent.com/24737584/140625623-f7516ab5-cbb5-4009-adcc-e26571246f92.png)
+
  
   Reference Citations:
   
