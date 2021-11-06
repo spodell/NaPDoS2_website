@@ -43,6 +43,11 @@ What it does
 	8. Align selected user domain protein sequences with database neighbors
 	
 	9. Build tree from protein alignment
+
+  Script-calling order
+  
+  [napdos2_script_order.pdf](https://github.com/spodell/NaPDoS2_website/files/7490932/napdos2_script_order.pdf)
+
   
   Reference Citations
   
