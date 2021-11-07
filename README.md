@@ -12,19 +12,22 @@ This repository contains the code used to construct version 2 of the Natural Pro
 	
 	- Randomization
 	
+	- Sliding window subsequences
+	
   	
 What the NaPDoS2 website does:
 
 	- NaPDoS2 detects and classifies ketosynthase (KS) and condensation (C) domains
-	from genomic, metagenomic, and PCR amplicon sequence data.
+	from genomic, metagenomic, and PCR amplicon data based on sequence similarity to
+	a manually curated reference database of experimentally verified examples.
 	
 	- A phylogeny-based classification scheme is used to make functional
-	predictions about the larger polyketide synthase (PKS) and non-ribosomal peptide
+	predictions about the polyketide synthase (PKS) and non-ribosomal peptide
 	synthetase (NRPS) genes in which these domains reside.
 	
 	- NaPDoS2 provides a rapid method to assess biosynthetic potential without
 	the need for fully assembled biosynthetic gene clusters (BGCs), instead relying
-	on short KS and C domain sequence tags-- this approach is particularly useful
+	on short KS and C domain sequence tags. This approach is particularly useful
 	for amplicons, poorly assembled genomes, or metagenomes.
 	
 	- The output can be used to assess the biosynthetic potential of large
@@ -43,7 +46,7 @@ What the NaPDoS2 website does:
 	
 	- newick-utils, version 1.6
 	
-	- MySQL, version 8 
+	- MySQL, version 8 (pre-loaded with classified reference database)
   
   Basic back-end pipeline steps:
   
