@@ -17,11 +17,11 @@ This repository contains the code used to construct version 2 of the Natural Pro
   	
 What the NaPDoS2 website does:
 
-	- NaPDoS2 detects and classifies ketosynthase (KS) and condensation (C) domains
+	- NaPDoS2 identifies ketosynthase (KS) and condensation (C) domains
 	from genomic, metagenomic, and PCR amplicon data based on sequence similarity to
 	a manually curated reference database of experimentally verified examples.
 	
-	- A phylogeny-based classification scheme is used to make functional
+	- A chemical phylogeny-based classification scheme is used to make functional
 	predictions about the polyketide synthase (PKS) and non-ribosomal peptide
 	synthetase (NRPS) genes in which these domains reside.
 	
