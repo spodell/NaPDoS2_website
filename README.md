@@ -18,18 +18,17 @@ This repository contains the code used to construct version 2 of the Natural Pro
 What the NaPDoS2 website does:
 
 	- NaPDoS2 identifies ketosynthase (KS) and condensation (C) domains
-	from user-submitted genomic, metagenomic, and PCR amplicon data 
-	based on sequence similarity to a manually curated reference database of 
-	experimentally verified examples.
+	from user-submitted genomic, metagenomic, and PCR amplicon data, based on
+	sequence similarity to a manually curated reference database of experimentally 
+	verified examples.
 	
 	- A chemical phylogeny-based classification scheme is used to make functional
 	predictions about the polyketide synthase (PKS) and non-ribosomal peptide
 	synthetase (NRPS) genes in which these domains reside.
 	
-	- NaPDoS2 provides a rapid method to assess biosynthetic potential without
-	the need for fully assembled biosynthetic gene clusters (BGCs), instead relying
-	on short KS and C domain sequence tags. This approach is particularly useful
-	for amplicons, poorly assembled genomes, or metagenomes.
+	- NaPDoS2 does not require fully assembled biosynthetic gene clusters (BGCs), 
+	instead relying on short KS and C domain sequence tags. This approach is particularly 
+	useful for amplicons, poorly assembled genomes, or metagenomes.
 	
 	- The output can be used to assess the biosynthetic potential of large
 	datasets and make predictions about the types of specialized metabolites that
