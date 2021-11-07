@@ -31,13 +31,13 @@ What the NaPDoS2 website does:
 	datasets and make predictions about the types of specialized metabolites that
 	might be produced.
   
-  Dependencies (command line, pre-compiled binary programs called by the CGI scripts)
+  Dependencies (pre-compiled binary programs called by CGI scripts)
 	
 	- EMBOSS, version 6.6.0, transeq module
 	
-	- diamond, version 0.9.29
+	- DIAMOND, version 0.9.29
 	
-	- muscle, version 3.8
+	- MUSCLE, version 3.8
 	
 	- FastTree, version 2.1.11
 	
