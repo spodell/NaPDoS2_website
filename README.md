@@ -4,7 +4,7 @@ This repository contains the code used to construct version 2 of the Natural Pro
 	https://npdomainseeker.sdsc.edu/napdos2/
   
   It also contains file size management scripts that users can run to select subsets 
-  of their data to reduce computational time and resources, for example:
+  of their data, for example:
   
   	- Size Filtering
 	
