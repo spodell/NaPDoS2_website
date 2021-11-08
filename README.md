@@ -46,10 +46,15 @@ What the NaPDoS2 website does:
 	- newick-utils, version 1.6
 	
 	- MySQL, version 8 (pre-loaded with classified reference database)
+	
+  MySQL database schema:
   
-  Basic back-end pipeline steps:
+  ![NaPDoS2_schema_2021](https://user-images.githubusercontent.com/24737584/140801328-28cf7747-6134-4ceb-b8f1-2804aced400c.png)
+
   
-	1. Translate nucleic acids to proteins (if necessary).
+  Pipeline processing steps:
+  
+	1. 6-frame translation of nucleic acids to proteins(if necessary).
 	
 	2. Diamond BLASTP search against a curated reference database to retrieve protein domains.
 	
