@@ -21,11 +21,11 @@ What the NaPDoS2 website does:
 	genomic, metagenomic, and PCR amplicon data, based on sequence similarity to a 
 	manually curated reference database of experimentally verified examples.
 	
-	- A chemical phylogeny-based classification scheme is used to make functional
+	- Uses a chemical phylogeny-based classification scheme to make functional
 	predictions about the polyketide synthase (PKS) and non-ribosomal peptide
 	synthetase (NRPS) genes in which these domains reside.
 	
-	- NaPDoS2 does not require fully assembled biosynthetic gene clusters (BGCs), 
+	- Does not require fully assembled biosynthetic gene clusters (BGCs), 
 	instead relying on short KS and C domain sequence tags. This approach is particularly 
 	useful for amplicons, poorly assembled genomes, or metagenomes.
 	
