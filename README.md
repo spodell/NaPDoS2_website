@@ -66,7 +66,7 @@ What the NaPDoS2 website does:
 
 
 
-This repository also contains scripts for input data management, e.g. selecting subsets of large fasta format sequence files:
+Scripts for input data management, e.g. selecting subsets of large, fasta format sequence files:
   
   	- Size Filtering (size_limit_seqs.pl)
 	
