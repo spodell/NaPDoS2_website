@@ -49,9 +49,8 @@ What the NaPDoS2 website does:
 	
   MySQL database schema:
   
-  ![NaPDoS2_schema_2021](https://user-images.githubusercontent.com/24737584/140801328-28cf7747-6134-4ceb-b8f1-2804aced400c.png)
+ ![NaPDoS2_schema_2021_small](https://user-images.githubusercontent.com/24737584/140801976-920fbe79-a962-4c23-af2a-347abc9313c2.png)
 
-  
   Pipeline processing steps:
   
 	1. 6-frame translation of nucleic acids to proteins(if necessary).
