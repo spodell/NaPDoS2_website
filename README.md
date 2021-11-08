@@ -22,7 +22,7 @@ What the NaPDoS2 website does:
 	datasets and make predictions about the types of specialized metabolites that
 	might be produced.
   
-  Dependencies (pre-compiled binary programs called by CGI scripts)
+Dependencies (pre-compiled binary programs called by CGI scripts)
 	
 	- EMBOSS, version 6.6.0, transeq module
 	
@@ -36,11 +36,7 @@ What the NaPDoS2 website does:
 	
 	- MySQL, version 8 (pre-loaded with classified reference database)
 	
-  MySQL database schema:
-  
- ![NaPDoS2_schema_2021_small](https://user-images.githubusercontent.com/24737584/140801976-920fbe79-a962-4c23-af2a-347abc9313c2.png)
-
-  Basic pipeline processing steps:
+Basic pipeline processing steps:
   
 	1. 6-frame translation of nucleic acids to proteins(if necessary).
 	
@@ -60,13 +56,16 @@ What the NaPDoS2 website does:
 	
 	9. Build tree from protein alignment.
 
-  Script-calling order:
+Script-calling order:
   
   ![napdos2_script_order_small](https://user-images.githubusercontent.com/24737584/140625623-f7516ab5-cbb5-4009-adcc-e26571246f92.png)
 
+ MySQL database schema:
+  
+ ![NaPDoS2_schema_2021_small](https://user-images.githubusercontent.com/24737584/140801976-920fbe79-a962-4c23-af2a-347abc9313c2.png)
 
 
-Scripts for input data management, e.g. selecting subsets of large, fasta format sequence files:
+Additional sripts for input data management, e.g. selecting subsets of large, fasta format sequence files:
   
   	- Size Filtering (size_limit_seqs.pl)
 	
