@@ -3,7 +3,7 @@ This repository contains the code used to construct version 2 of the Natural Pro
 
 	https://npdomainseeker.sdsc.edu/napdos2/
   
-  It also contains scripts for selecting subsets of large data input files, for example:
+  It also contains scripts for selecting subsets of large fasta format input files, for example:
   
   	- Size Filtering (size_limit_seqs.pl)
 	
