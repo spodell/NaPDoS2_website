@@ -38,7 +38,7 @@ Dependencies (pre-compiled binary programs called by CGI scripts)
 	
 Basic pipeline processing steps:
   
-	1. 6-frame translation of nucleic acids to proteins(if necessary).
+	1. 6-frame translation of nucleic acids to proteins (if necessary).
 	
 	2. Diamond BLASTP search against a curated reference database to retrieve protein domains.
 	
