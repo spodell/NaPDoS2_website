@@ -11,7 +11,7 @@ This repository contains the code used to construct version 2 of the Natural Pro
 	
 	- Random Sampling (get_seq_info.pl, randomize_lines.pl, serialize_large_list.pl)
 	
-	- Sliding window subsequences (sequence_subdivider.pl)
+	- Generation of sliding window subsequences (sequence_subdivider.pl)
 		
 What the NaPDoS2 website does:
 
