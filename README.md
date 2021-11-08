@@ -3,15 +3,6 @@ This repository contains the code used to construct version 2 of the Natural Pro
 
 	https://npdomainseeker.sdsc.edu/napdos2/
   
-  It also contains scripts for selecting subsets of large fasta format input files, for example:
-  
-  	- Size Filtering (size_limit_seqs.pl)
-	
-	- File Splitting (serialize_sequences.pl)
-	
-	- Random Sampling (get_seq_info.pl, randomize_lines.pl, serialize_large_list.pl)
-	
-	- Generation of sliding window subsequences (sequence_subdivider.pl)
 		
 What the NaPDoS2 website does:
 
@@ -74,7 +65,17 @@ What the NaPDoS2 website does:
   ![napdos2_script_order_small](https://user-images.githubusercontent.com/24737584/140625623-f7516ab5-cbb5-4009-adcc-e26571246f92.png)
 
  
-  Reference Citations:
+This repository also contains scripts for input data management, e.g. selecting subsets of large fasta format sequence files:
+  
+  	- Size Filtering (size_limit_seqs.pl)
+	
+	- File Splitting (serialize_sequences.pl)
+	
+	- Random Sampling (get_seq_info.pl, randomize_lines.pl, serialize_large_list.pl)
+	
+	- Generation of sliding window subsequences (sequence_subdivider.pl)
+	
+Reference Citations:
   
 	Klau LJ, Podell S, Creamer KE, Demko AM, Singh HW, Allen E, Moore BM, Ziemert N,
 	Letzel AC, Jensen PR. The Natural Product Domain Seeker (NaPDoS) version 2:
