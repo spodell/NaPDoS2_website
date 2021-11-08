@@ -3,7 +3,7 @@ This repository contains the code used to construct version 2 of the Natural Pro
 
 	https://npdomainseeker.sdsc.edu/napdos2/
   
-  It also contains file size management scripts for selecting input data subsets, for example:
+  It also contains scripts for selecting input data subsets, for example:
   
   	- Size Filtering (size_limit_seqs.pl)
 	
