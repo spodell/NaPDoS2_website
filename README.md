@@ -66,7 +66,7 @@ Script-calling order:
  ![NaPDoS2_schema_2021_small](https://user-images.githubusercontent.com/24737584/140801976-920fbe79-a962-4c23-af2a-347abc9313c2.png)
 
 
-Additional sripts for input data management, e.g. selecting subsets of large, fasta format sequence files:
+Additional scripts for input data management, e.g. selecting subsets of large, fasta format sequence files:
   
   	- Size Filtering (size_limit_seqs.pl)
 	
