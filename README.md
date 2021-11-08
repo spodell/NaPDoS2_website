@@ -3,18 +3,16 @@ This repository contains the code used to construct version 2 of the Natural Pro
 
 	https://npdomainseeker.sdsc.edu/napdos2/
   
-  It also contains file size management scripts that users can run to select subsets 
-  of their data, for example:
+  It also contains file size management scripts for selecting data subsets, for example:
   
-  	- Size Filtering
+  	- Size Filtering (size_limit_seqs.pl)
 	
-	- File Splitting
+	- File Splitting (serialize_sequences.pl)
 	
-	- Randomization
+	- Random Sampling (get_seq_info.pl, randomize_lines.pl, serialize_large_list.pl)
 	
-	- Sliding window subsequences
-	
-  	
+	- Sliding window subsequences (sequence_subdivider.pl)
+		
 What the NaPDoS2 website does:
 
 	- Identifies ketosynthase (KS) and condensation (C) domains from user-submitted 
@@ -51,7 +49,7 @@ What the NaPDoS2 website does:
   
  ![NaPDoS2_schema_2021_small](https://user-images.githubusercontent.com/24737584/140801976-920fbe79-a962-4c23-af2a-347abc9313c2.png)
 
-  Pipeline processing steps:
+  Basic pipeline processing steps:
   
 	1. 6-frame translation of nucleic acids to proteins(if necessary).
 	
