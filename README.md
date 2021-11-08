@@ -64,7 +64,8 @@ What the NaPDoS2 website does:
   
   ![napdos2_script_order_small](https://user-images.githubusercontent.com/24737584/140625623-f7516ab5-cbb5-4009-adcc-e26571246f92.png)
 
- 
+
+
 This repository also contains scripts for input data management, e.g. selecting subsets of large fasta format sequence files:
   
   	- Size Filtering (size_limit_seqs.pl)
