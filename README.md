@@ -36,6 +36,7 @@ Dependencies (pre-compiled binary programs called by CGI scripts)
 	
 	- MySQL, version 8 (pre-loaded with classified reference database)
 	
+
 Basic pipeline processing steps:
   
 	1. 6-frame translation of nucleic acids to proteins (if necessary).
