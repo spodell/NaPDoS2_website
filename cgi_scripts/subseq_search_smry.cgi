@@ -187,7 +187,7 @@ use Benchmark;
 		if (exists $id_hash{$domain_name})
 		{		
 			my $coords_line = join "\t", ($orig_seq ,$qstart,$qend, $domain_name);
-			$selected_blastp_lines .= $coords_line; 
+			$selected_blastp_lines .= "$coords_line\n"; 
 			#print "LINE 191 found selected domain_name=$domain_name <br />";			
 		}
 		else
