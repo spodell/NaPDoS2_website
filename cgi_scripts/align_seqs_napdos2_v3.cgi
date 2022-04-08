@@ -546,7 +546,7 @@ Try selecting all matches instead of a domain type subset. <pre>";
 		}
 		elsif ($align_format eq "clw") # $job_id".fasta gets original fasta input, not selected alignment
 		{
-			$web_access_aln_filename = "$webpath/tmp2/$job_id/$job_id"."_align_out.fasta";
+			$web_access_aln_filename = "$webpath/tmp2/$job_id/$job_id"."_align_out.clw";
 		}
 		$html_out = &display_msf($web_access_aln_filename, $align_out);
 	
