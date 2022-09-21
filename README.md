@@ -78,9 +78,10 @@ Additional scripts for input data management, e.g. selecting subsets of large, f
 	
 Reference Citations:
   
-	Klau LJ, Podell S, Creamer KE, Demko AM, Singh HW, Allen E, Moore BM, Ziemert N,
-	Letzel AC, Jensen PR. The Natural Product Domain Seeker (NaPDoS) version 2:
-	Relating ketosynthase phylogeny to biosynthetic function. (in preparation)
+	Klau LJ, Podell S, Creamer KE, Demko AM, Singh HW, Allen EE, Moore BS,
+	Ziemert N, Letzel AC, Jensen PR. The Natural Product Domain Seeker version 2
+	(NaPDoS2) webtool relates ketosynthase phylogeny to biosynthetic function. J
+	Biol Chem. 2022 Sep 12;:102480. doi: 10.1016/j.jbc.2022.102480.
 
 	Ziemert N, Podell S, Penn K, Badger JH, Allen E, Jensen PR The Natural Product
 	Domain Seeker NaPDoS: A Phylogeny Based Bioinformatic Tool to Classify Secondary
