@@ -22,8 +22,9 @@ use Benchmark;
 	
 # server-specific directories
 	my $webpath = "https://npdomainseeker.sdsc.edu";
-	my $unixpath = "/misc/www/projects/npdomainseeker";	
-	my $diamond_dir = "$unixpath/bin/diamond-0.9.29";	
+	my $unixpath = "/misc/www/projects/npdomainseeker";
+	my $diamond_dir = "$unixpath/bin/diamond-2.0.15";	
+#	my $diamond_dir = "$unixpath/bin/diamond-0.9.29";
 	my $transeq_dir = "$unixpath/bin/EMBOSS-6.6.0/emboss";	
 	
 # initialize CGI 
@@ -908,7 +909,7 @@ sub get_nucleotide_coords_diamond
 		# select lines from blastx file where identity = 100%  AND the parent seq matches the child
 		# sort in decreasing order of bitscores, so don't get duplicate hits for same candidate orf
 			my $parsed_diamond_blastx_filename = "$data_dir/$job_id"."_trim_cands_diamond.coords";
-			my $parse_blastx_cmd =qq(sort -nr -k12 $diamond_blastx_filename |grep '100.0' |cut -f1,2,7,8); # > $parsed_diamond_blastx_filename);		
+			my $parse_blastx_cmd =qq(sort -nr -k12 $diamond_blastx_filename |grep '100' |cut -f1,2,7,8); # > $parsed_diamond_blastx_filename);		
 			#print "$parse_blastx_cmd <br />";		
 			my $parsed_blastx_txt = `$parse_blastx_cmd`;
 		
