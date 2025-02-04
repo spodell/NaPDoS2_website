@@ -26,7 +26,7 @@ Dependencies (pre-compiled binary programs called by CGI scripts)
 	
 	- EMBOSS, version 6.6.0, transeq module
 	
-	- DIAMOND, version 0.9.29
+	- DIAMOND, version 2.0.15
 	
 	- MUSCLE, version 3.8
 	
